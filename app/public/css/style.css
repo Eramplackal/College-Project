@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.bg-primary-main{
+ background-color: #00B0F5 !important;
+}
+.secondary-bg-main{
+    background-color: #E0F5FE;
+}
+.bg-primary-main-text{
+ color: #00B0F5 !important;
+}
+.card li::marker {
+  color: #00B0F5 !important;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;    
+    background-color: #b0afb0;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #00B0F5 !important;
+  width: 10px !important;
+  height: 10px !important;
+  border: 1px solid !important;
+  border-radius: 10px !important;  
+}
+
+.form-control.search-field {
+    border-radius: 50px !important;
+
+}
+.btn.search-btn {
+    border: 0 !important;
+    border-radius: 50px !important;
+    background-color: #00B0F5 !important;
+    color: #fff;
+    margin-left: -40px;
+
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 3% !important;
+}
+
+.topnavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00a9e0;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.topnav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.topnav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.topnav-links a:hover {
+    color: #f0f0f0;
+}
+
+.topnav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.topnav-actions a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.topnav-actions .btn {
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.topnav-actions .btn:hover {
+    background-color: white;
+    color: #00a9e0;
+}
+
+.topnav-actions .pay-due {
+    border: 2px solid white;
+}
+
+.topnav-actions .signup {
+    background-color: white;
+    color: #00a9e0;
+}
+
+.topnav-actions .signup:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.call-now span {
+    font-weight: bold;
+}
+
+.call-now {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Colors for each platform */
+        .facebook { background-color: #3b5998; }
+        .twitter { background-color: #1da1f2; }
+        .youtube { background-color: #ff0000; }
+        .blogger { background-color: #fc4f08; }
+        .instagram { background-color: #e4405f; }
+        .linkedin { background-color: #0077b5; }
+
+        .footer-bottom {
+            background-color: #333; /* Dark background */
+            padding: 15px;
+            color: white;
+        }
+
+        .tssocial-icons a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            margin: 0 5px;
+            border-radius: 50%;
+            color: white;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+
+        /* Add hover effects for each icon */
+        .tssocial-icons a:hover {
+            opacity: 0.8;
+        }
+.tf-advantage-container .card{
+    min-height: 250px !important;
+}
+
+
+
+/*---------------------------Media queries-------------------------*/
+
+@media screen and (max-width: 768px){
+  .carousel-control-next, .carousel-control-prev {
+    width: 5% !important;
+} 
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 1rem !important;
+    height: 1rem !important; 
+}
+.carousel-indicators {
+    margin-bottom: 10px !important;
+}
+.topnavbar {
+        flex-direction: flex;
+        justify-content: space-between;
+    }
+
+    .topnav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .topnav-actions {
+        display: flex;
+        justify-content: space-between;
+    }
+    .tf-search{
+        max-width: 150px;
+    }
+    .tssocial-icons a {
+        width: 40px;
+        height: 40px;
+    }
+    .tf-advantage-container .card{
+        min-height: 10px !important;
+    }
+    
+}

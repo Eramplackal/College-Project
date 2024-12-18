@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>NKT College</title>
+</head>
+<body>
+
+   
+<div class="container-fluid">
+ <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">NKT College</a>    
+        <li class="nav-item d-block d-sm-none mobile-nav">
+          <a class="nav-link" href="#" style="color: #00a9e0 !important; font-weight: 500;">Pay Due</a>
+        </li>
+    <li class="nav-item d-block d-sm-none mobile-nav">
+          <a class="nav-link" href="#"  style="color: #00a9e0 !important; font-weight: 500;"><i class="fa fa-user"></i></a>
+        </li>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about">ABOUT</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-current="courses" href="courses">COURSES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact">CONTACT US</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            STUDENTS HUB
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BLOG</a>
+        </li>
+        <li class="nav-item d-block d-sm-none">
+          <a class="nav-link" href="#">Digital</a>
+        </li>
+        <li class="nav-item d-block d-sm-none">
+          <a class="nav-link" href="#">Distance Learning</a>
+        </li>
+        <li class="nav-item d-block d-sm-none">
+          <a class="nav-link" href="#">EduTV</a>
+        </li>
+        <li class="nav-item d-block d-sm-none">
+          <a class="nav-link" href="#">School Integrated Program</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+		<topnav class=" d-sm-flex d-none">
+        
+			<div class="topnav-actions">
+				
+				<a href="auth/login" class="btn signup ">Log in</a>
+				<a href="auth/register" class="btn signup ">Sign Up</a>
+			</div>
+		</topnav>
+      </form>
+    </div>
+  </div>
+</nav>
+	</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/h1tf.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/h2tf.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/h3tf.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/h4tf.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+<div class="container py-5">
+	<!-- Hero Section -->
+	<div class="text-center mb-5">
+	  <div class="p-5 bg-primary-main text-white rounded-3">
+		<h1 class="display-4">Welcome to NKT College</h1>
+		<p class="lead">Your Gateway to Excellence in Higher Education</p>
+		<a href="#about" class="btn btn-light btn-lg">Discover More</a>
+	  </div>
+	</div>
+  
+	<!-- About Section -->
+	<div id="about" class="py-5">
+	  <h2 class="text-center mb-4">About NKT College</h2>
+	  <div class="row align-items-center">
+		<div class="col-md-6">
+		  <img src="img/college_campus.jpg" alt="NKT College Campus" class="img-fluid rounded-3 shadow">
+		</div>
+		<div class="col-md-6">
+		  <p class="text-muted">With over 50 years of academic excellence, NKT College stands as a beacon of knowledge and innovation. We are committed to shaping the future by fostering a culture of learning, leadership, and social responsibility. Our vibrant campus life, expert faculty, and modern facilities ensure a transformative educational experience.</p>
+		  <a href="about.html" class="btn bg-primary-main">Learn More About Us</a>
+		</div>
+	  </div>
+	</div>
+  
+	<!-- Key Highlights Section -->
+	<div class="py-5 bg-light rounded-3">
+	  <h2 class="text-center mb-4">Why Choose NKT College?</h2>
+	  <div class="row text-center gy-4">
+		<div class="col-md-4">
+		  <i class="primary-main bi-trophy-fill text-primary" style="font-size: 50px;"></i>
+		  <h5 class="mt-3">50+ Years of Excellence</h5>
+		  <p>Trusted by generations for its legacy of academic rigor and holistic development.</p>
+		</div>
+		<div class="col-md-4">
+		  <i class="primary-main bi-people-fill text-primary" style="font-size: 50px;"></i>
+		  <h5 class="mt-3">15,000+ Alumni</h5>
+		  <p>A global network of professionals leading industries and communities.</p>
+		</div>
+		<div class="col-md-4">
+		  <i class="primary-main bi-building text-primary" style="font-size: 50px;"></i>
+		  <h5 class="mt-3">Modern Campus</h5>
+		  <p>Advanced infrastructure, state-of-the-art labs, and vibrant campus culture.</p>
+		</div>
+	  </div>
+	</div>
+  
+	<!-- Call to Action -->
+	<div class="text-center py-5">
+	  <h2>Join NKT College Today!</h2>
+	  <p>Start your journey toward a brighter future with us. Experience education that inspires and empowers.</p>
+	  <a href="admissions.html" class="btn btn-primary btn-lg">Apply Now</a>
+	</div>
+  </div>
+  
+
+<div class="container py-5">
+	<div class="shadow p-3 bg-body rounded-3">
+		<div class="text-center mb-4"><h2>36+ years of legacy</h2></div>
+	<div class="row">
+		<div class="col-md-4 col-6">
+  <div class="card text-center border-0">
+    <img src="img/oai1.png" style="max-width: 100px; margin: auto;" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h2 class="card-title">200+</h2>
+      <p class="card-text">Coaching centers in India</p>
+    </div>
+  </div>
+  </div>
+  <div class="col-md-4 col-6">
+  <div class="card text-center border-0">
+    <img src="img/oai2.png" style="max-width: 100px; margin: auto;" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h2 class="card-title">231,700+</h2>
+      <p class="card-text">Aakashians qualified<br> NEET & JEE in 2024</p>
+    </div>
+  </div>
+</div>
+<div class="col-md-4 col-6">
+  <div class="card text-center border-0">
+    <img src="img/oai3.png" style="max-width: 100px; margin: auto;" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h2 class="card-title">4000+</h2>
+      <p class="card-text">Expert Faculty</p>
+    </div>
+  </div>
+  </div>
+</div>
+	</div>
+</div>
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+<div class="secondary-bg-main">
+	<div class="container py-md-5 py-3">
+		<div><h1 class="text-center mb-4">Popular Courses</h1></div>
+		<div class="row">
+			<div class="col-lg-4">
+			<div class="card">
+			  <div class="card-header bg-primary-main text-white text-center"><h4>Engineering</h4></div>
+			  <div class="card-body">
+			    <p class="card-text">
+			    	<ul>
+			    		<li><b>Two Year First Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+			    		<li><b>One Year Second Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+			    	</ul>
+			    </p>
+			    <div class="card-body text-center">
+				    <a href="#" class="card-link">Check More</a>
+				  </div>
+			  </div>
+			</div>				
+			</div>
+			<div class="col-lg-4">
+			<div class="card">
+			  <div class="card-header bg-primary-main text-white text-center"><h4>Medical</h4></div>
+			  <div class="card-body">
+			    <p class="card-text">
+			    	<ul>
+			    		<li><b>Two Year First Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+			    		<li><b>One Year Second Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+			    	</ul>
+			    </p>
+			    <div class="card-body text-center">
+				    <a href="#" class="card-link">Check More</a>
+				  </div>
+			  </div>
+			</div>				
+			</div>
+			<div class="col-lg-4">
+			<div class="card">
+			  <div class="card-header bg-primary-main text-white text-center"><h4>Foundation</h4></div>
+			  <div class="card-body">
+			    <p class="card-text">
+			    	<ul>
+			    		<li><b>Two Year First Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+			    		<li><b>One Year Second Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+			    	</ul>
+			    </p>
+			    <div class="card-body text-center">
+				    <a href="#" class="card-link">Check More</a>
+				  </div>
+			  </div>
+			</div>				
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+	<div class="container py-md-5 py-3">
+		<div class="row">
+			<div class="col-lg-6">
+			<div class="card">
+			  <div class="card-header bg-primary-main text-white text-center"><h4>Foundation</h4></div>
+			  <div class="card-body">
+			  	<div class="row">
+			  		<div class="col-9">			  			
+					    <p class="card-text">
+					    	<ul>
+					    		<li><b>Two Year First Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+					    	</ul>
+					    </p>
+			  		</div>
+			  		<div class="col-3">
+			  			<div class="d-flex">
+			  			<a href="javascript:;"><i class="fa fa-download mt-4"></i></a>
+			  		</div>
+			  		</div>
+			  	</div>
+			  	<div class="row">
+			  		<div class="col-9">			  			
+					    <p class="card-text">
+					    	<ul>
+					    		<li><b>One Year Second Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+					    	</ul>
+					    </p>
+			  		</div>
+			  		<div class="col-3">
+			  			<div class="d-flex">
+			  			<a href="javascript:;"><i class="fa fa-download mt-4"></i></a>
+			  		</div>
+			  		</div>
+			  	</div>
+			    <div class="card-body text-center">
+				    <a href="#" class="card-link">Check More</a>
+				  </div>
+			  </div>
+			</div>				
+			</div>
+			<div class="col-lg-6">
+			<div class="card">
+			  <div class="card-header bg-primary-main text-white text-center"><h4>News & Events</h4></div>
+			  <div class="card-body">
+			  	<div class="row">
+			  		<div class="col-9">			  			
+					    <p class="card-text">
+					    	<ul>
+					    		<li><b>Two Year First Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+					    	</ul>
+					    </p>
+			  		</div>
+			  		<div class="col-3">
+			  			<div class="d-flex">
+			  			<a href="javascript:;"><i class="fa fa-download mt-4"></i></a>
+			  		</div>
+			  		</div>
+			  	</div>
+			  	<div class="row">
+			  		<div class="col-9">			  			
+					    <p class="card-text">
+					    	<ul>
+					    		<li><b>One Year Second Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+					    	</ul>
+					    </p>
+			  		</div>
+			  		<div class="col-3">
+			  			<div class="d-flex">
+			  			<a href="javascript:;"><i class="fa fa-download mt-4"></i></a>
+			  		</div>
+			  		</div>
+			  	</div>
+			    <div class="card-body text-center">
+				    <a href="#" class="card-link">Check More</a>
+				  </div>
+			  </div>
+			</div>				
+			</div>
+		</div>
+	</div>
+
+	<!-- ------------------------------------------------------------------------------------- -->
+
+<div class="secondary-bg-main">
+<div class="container py-md-5 py-3">	
+		<div><h1 class="text-center mb-4">Official Answer Keys & Solutions</h1></div>
+		<div class="row">
+			<div class="col-lg-4">
+			<div class="card">
+			  <div class="card-header bg-primary-main text-white text-center"><h4>Engineering</h4></div>
+			  <div class="card-body">
+			  	<div class="row">
+			  		<div class="col-9">			  			
+					    <p class="card-text">
+					    	<ul>
+					    		<li><b>Two Year First Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+					    	</ul>
+					    </p>
+			  		</div>
+			  		<div class="col-3">
+			  			<div class="d-flex">
+			  			<a href="javascript:;"><i class="fa fa-download mt-4"></i></a>
+			  		</div>
+			  		</div>
+			  	</div>
+			  	<div class="row">
+			  		<div class="col-9">			  			
+					    <p class="card-text">
+					    	<ul>
+					    		<li><b>One Year Second Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+					    	</ul>
+					    </p>
+			  		</div>
+			  		<div class="col-3">
+			  			<div class="d-flex">
+			  			<a href="javascript:;"><i class="fa fa-download mt-4"></i></a>
+			  		</div>
+			  		</div>
+			  	</div>
+			    <div class="card-body text-center">
+				    <a href="#" class="card-link">See all answers/ solutions</a>
+				  </div>
+			  </div>
+			</div>				
+			</div>
+			<div class="col-lg-4">
+			<div class="card">
+			  <div class="card-header bg-primary-main text-white text-center"><h4>Medical</h4></div>
+			  <div class="card-body">
+			  	<div class="row">
+			  		<div class="col-9">			  			
+					    <p class="card-text">
+					    	<ul>
+					    		<li><b>Two Year First Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+					    	</ul>
+					    </p>
+			  		</div>
+			  		<div class="col-3">
+			  			<div class="d-flex">
+			  			<a href="javascript:;"><i class="fa fa-download mt-4"></i></a>
+			  		</div>
+			  		</div>
+			  	</div>
+			  	<div class="row">
+			  		<div class="col-9">			  			
+					    <p class="card-text">
+					    	<ul>
+					    		<li><b>One Year Second Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+					    	</ul>
+					    </p>
+			  		</div>
+			  		<div class="col-3">
+			  			<div class="d-flex">
+			  			<a href="javascript:;"><i class="fa fa-download mt-4"></i></a>
+			  		</div>
+			  		</div>
+			  	</div>
+			    <div class="card-body text-center">
+				    <a href="#" class="card-link">See all answers/ solutions</a>
+				  </div>
+			  </div>
+			</div>				
+			</div>
+			<div class="col-lg-4">
+			<div class="card">
+			  <div class="card-header bg-primary-main text-white text-center"><h4>Olympiads & Boards</h4></div>
+			  <div class="card-body">
+			  	<div class="row">
+			  		<div class="col-9">			  			
+					    <p class="card-text">
+					    	<ul>
+					    		<li><b>Two Year First Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+					    	</ul>
+					    </p>
+			  		</div>
+			  		<div class="col-3">
+			  			<div class="d-flex">
+			  			<a href="javascript:;"><i class="fa fa-download mt-4"></i></a>
+			  		</div>
+			  		</div>
+			  	</div>
+			  	<div class="row">
+			  		<div class="col-9">			  			
+					    <p class="card-text">
+					    	<ul>
+					    		<li><b>One Year Second Step Integrated Classroom Course</b> for JEE (Main and Advanced)</li>
+					    	</ul>
+					    </p>
+			  		</div>
+			  		<div class="col-3">
+			  			<div class="d-flex">
+			  			<a href="javascript:;"><i class="fa fa-download mt-4"></i></a>
+			  		</div>
+			  		</div>
+			  	</div>
+			    <div class="card-body text-center">
+				    <a href="#" class="card-link">See all answers/ solutions</a>
+				  </div>
+			  </div>
+			</div>				
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+	<div class="container py-md-5 py-3">
+		<div><h1 class="text-center mb-4">Outstanding Results</h1></div>
+		<div class="row">
+			<div class="col-lg-4">
+			<div class="card">
+			  <div class="card-header bg-primary-main text-white text-center"><h4>JEE (Advanced) 2024 Results</h4></div>
+			  <div class="card-body text-center">
+			    	<img class="card-text" style="max-width: 90%; margin: auto !important;" src="img/r1.webp">
+			    <div class="card-body text-center">
+				    <a href="#" class="card-link">See all results</a>
+				  </div>
+			  </div>
+			</div>				
+			</div>
+			<div class="col-lg-4">
+			<div class="card">
+			  <div class="card-header bg-primary-main text-white text-center"><h4>NEET 2024 Results</h4></div>
+			  <div class="card-body text-center">
+			    	<img class="card-text" style="max-width: 90%; margin: auto !important;" src="img/r2.webp">
+			    <div class="card-body text-center">
+				    <a href="#" class="card-link">See all results</a>
+				  </div>
+			  </div>
+			</div>				
+			</div>
+			<div class="col-lg-4">
+			<div class="card">
+			  <div class="card-header bg-primary-main text-white text-center"><h4>Scholarship Exam Results</h4></div>
+			  <div class="card-body text-center">
+			    	<img class="card-text" style="max-width: 90%; margin: auto !important;" src="img/r3.webp">
+			    <div class="card-body text-center">
+				    <a href="#" class="card-link">See all results</a>
+				  </div>
+			  </div>
+			</div>				
+			</div>
+		</div>
+	</div>
+
+	<!-- ------------------------------------------------------------------------------------- -->
+
+	<div class="secondary-bg-main tf-advantage-container">
+<div class="container py-md-5 py-3">
+	<div><h1 class="text-center mb-3">Our Advantages</h1></div>
+  <h2 class="section-title text-center mb-4" style="color: #00a9e0 !important; font-weight: 500;"> Stay ahead with all-round performance in your chosen stream</h3>
+  
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><img class="card-icon-img pr-3" src="img/adv2-home.png" alt="img" > Teaching Methodology</h5> <!-- Updated Icon -->
+          <ul>
+            <li>Concept & application based learning</li>
+            <li>Interactive & engaging lectures</li>
+            <li>Integrated approach focusing on competitive & school exams</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><img class="card-icon-img" src="img/adv3-home.png" alt="img" > Study Material</h5>
+          <ul>
+            <li>Well-researched & analysed</li>
+            <li>Comprehensive & meticulously designed</li>
+            <li>Based on latest syllabus & exam pattern</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body"> 
+          <h5 class="card-title"><img class="card-icon-img" src="img/adv4-home.png" alt="img" > Regular Tests & Assessments</h5>
+          <ul>
+            <li>Detailed test analysis with error analysis report</li>
+            <li>Simulated tests based on latest exam pattern</li>
+            <li>Compete at national level with All India Aakash Test Series</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><img class="card-icon-img" src="img/adv5-home.png" alt="img" > Doubt Clearing System</h5>
+          <ul>
+            <li>One-to-one interactive session with subject experts</li>
+            <li>Detailed & simplified solutions</li>
+            <li>Video solutions for instant doubt resolution</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><img class="card-icon-img" src="img/adv6-home.png" alt="img" > Feedback System</h5>
+          <ul>
+            <li>Timely updates on performance & attendance</li>
+            <li>Query/ grievance redressal</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><img class="card-icon-img" src="img/adv1-home.png" alt="img" > Omni-channel Learning</h5>
+          <ul>
+            <li>100% digitised classrooms across all branches or centres</li>
+            <li>Hybrid classrooms offering the best of classroom & online learning</li>
+            <li>Digital Product (Recorded Video Lectures, e-Content, e-Test Papers/Series)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+	<div class="bg-light py-lg-5 py-3">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3">
+					<div><h5></h5></div>
+					<div>
+						<img src="img/570625.png" class="mb-4" style="width: 50%; max-width: 200px;">
+					</div>
+					<p class="text-dark">Teachers Factory dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that do not yet have content.</p>
+				</div>
+				<div class="col-sm-3">
+					<div><h5>JEE MAIN</h5></div>
+					<ul style="list-style-type: none; color: #fff; padding-left: 0; font-size: 14px; line-height: 25px;">
+						<li><a class="text-dark text-decoration-none" href="About Aakash" target="_blank">About Us</a></li>
+					<li><a class="text-dark text-decoration-none" href="Why Aakash" target="_blank">Why To Choose Us</a></li>
+					<li><a class="text-dark text-decoration-none" href="Aakash Methodology & Concept" target="_blank">Methodology & Concept</a></li>
+					<li><a class="text-dark text-decoration-none" href="Aakash in Media" target="_blank">In Media</a></li>
+					<li><a class="text-dark text-decoration-none" href="Aakash Nationwide Centers" target="_blank">Nationwide Centers</a></li>
+					<li><a class="text-dark text-decoration-none" href="Franchise Information" target="_blank">Franchise Information</a></li>
+					<li><a class="text-dark text-decoration-none" href="Investor Corner" target="_blank">Investor Corner</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<div><h5>NEET</h5></div>
+					<ul style="list-style-type: none; color: #fff; padding-left: 0; font-size: 14px; line-height: 25px;">
+						<li><a class="text-dark text-decoration-none" href="About Aakash" target="_blank">About Us</a></li>
+					<li><a class="text-dark text-decoration-none" href="Why Aakash" target="_blank">Why To Choose Us</a></li>
+					<li><a class="text-dark text-decoration-none" href="Aakash Methodology & Concept" target="_blank">Methodology & Concept</a></li>
+					<li><a class="text-dark text-decoration-none" href="Aakash in Media" target="_blank">In Media</a></li>
+					<li><a class="text-dark text-decoration-none" href="Aakash Nationwide Centers" target="_blank">Nationwide Centers</a></li>
+					<li><a class="text-dark text-decoration-none" href="Franchise Information" target="_blank">Franchise Information</a></li>
+					<li><a class="text-dark text-decoration-none" href="Investor Corner" target="_blank">Investor Corner</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<div><h5>COURSES & SCHOLARSHIPS</h5></div>
+					<ul style="list-style-type: none; color: #fff; padding-left: 0; font-size: 14px; line-height: 25px;">
+						<li><a class="text-dark text-decoration-none" href="About Aakash" target="_blank">About Us</a></li>
+					<li><a class="text-dark text-decoration-none" href="Why Aakash" target="_blank">Why To Choose Us</a></li>
+					<li><a class="text-dark text-decoration-none" href="Aakash Methodology & Concept" target="_blank">Methodology & Concept</a></li>
+					<li><a class="text-dark text-decoration-none" href="Aakash in Media" target="_blank">In Media</a></li>
+					<li><a class="text-dark text-decoration-none" href="Aakash Nationwide Centers" target="_blank">Nationwide Centers</a></li>
+					<li><a class="text-dark text-decoration-none" href="Franchise Information" target="_blank">Franchise Information</a></li>
+					<li><a class="text-dark text-decoration-none" href="Investor Corner" target="_blank">Investor Corner</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-bottom bg-dark">
+		<div class="d-sm-flex justify-content-between">
+			<div><div class="tssocial-icons mb-sm- d-sm-flex justify-content-center align-items-center">
+        <span class="me-3">Follow Us:</span>
+        <a href="#" class="facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="twitter" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="youtube" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+    </div></div>
+			<div class="pt-3"><p>&copy; 2024 Teacher Factory. All rights reserved.</p></div>
+		</div>
+	</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
