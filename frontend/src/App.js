@@ -1,27 +1,43 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import { BrowserRouter,Route,Routes } from 'react-router-dom';
-import Homepage from './pages/Homepage';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import LoginPage from './pages/LoginPage';
+import Navbar from './common/components/Navbar';
+import { BrowserRouter,Route,Routes,useLocation } from 'react-router-dom';
+import Homepage from './common/pages/Homepage';
+import About from './common/pages/About';
+import Contact from './common/pages/Contact';
+import LoginPage from './common/pages/LoginPage';
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+import Dashboard from './admin/Dashboard';
+import ProtectedRoute from './admin/ProtectedRoute';
 
-function App() {
+export default function App() {
+  const location = useLocation();
+
+  // Define routes where the Navbar should not appear
+  const hiddenNavbarRoutes = ["/dashboard"];
+
   return (
     <>
-      <Navbar />
+      {/* Conditionally render the Navbar */}
+      {!hiddenNavbarRoutes.includes(location.pathname) && <Navbar />}
       <div className="container mt-4">
         <Routes>
-          <Route path="/" element={<Homepage />} />  {/* Home route */}
-          <Route path="/about" element={<About />} />  {/* About route */}
-          {/* <Route path="/courses" element={<Courses />} />  Courses route */}
-          <Route path="/contact" element={<Contact />} />  {/* Contact route */}
-          <Route path="/login" element={<LoginPage />} />  {/* Contact route */}
-
+          <Route path="/" element={<Homepage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
+        <ToastContainer />
       </div>
     </>
   );
 }
 
-export default App;

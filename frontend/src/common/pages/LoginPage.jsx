@@ -1,10 +1,15 @@
 import React from 'react';
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export default function LoginPage() {
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [errorMessage, setErrorMessage] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const navigate = useNavigate();
+
+  localStorage.removeItem("token");
   
     const handleSubmit = async (e) => {
       e.preventDefault();
@@ -23,7 +28,8 @@ export default function LoginPage() {
   
       try {
         // Send POST request to the server
-        const response = await fetch("http://localhost/auth/login", {
+        console.log(email,password)
+        const response = await fetch("http://localhost:4000/auth/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -38,6 +44,11 @@ export default function LoginPage() {
         if (response.ok) {
           const data = await response.json();
           console.log("Login successful:", data);
+          toast.success("Login successful!");
+          localStorage.setItem("token", data.token);
+          setTimeout(() => {
+            navigate("/dashboard");
+          }, 500);
           // You can redirect the user or perform other actions here
           // For example, you might want to store the token or user info in state
         } else {
@@ -80,7 +91,7 @@ export default function LoginPage() {
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            required
+           
           />
         </div>
       </div>
@@ -101,7 +112,7 @@ export default function LoginPage() {
             placeholder="Enter your password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            required
+            
           />
         </div>
       </div>
